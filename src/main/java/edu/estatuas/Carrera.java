@@ -11,6 +11,8 @@ public class Carrera {
     private double costeTotal;
     private int propina;
 
+    private Conductor conductor;
+
     Carrera(String tarjetaCredito) {
         this.tarjetaCredito = tarjetaCredito;
     }
@@ -46,6 +48,7 @@ public class Carrera {
     public String getTarjetaCredito() {
         return tarjetaCredito;
     }
+
     public String getOrigen() {
         return origen;
     }
@@ -77,6 +80,11 @@ public class Carrera {
     public double getCosteEsperado() {
         return Tarifa.getCosteTotalEsperado(this);
     }
+
+    public void setConductor(Conductor conductor) {
+        this.conductor = conductor;
+    }
+
 
 
 }
