@@ -7,11 +7,6 @@ public class Tarifa {
     final static double COSTE_MINIMO = 5.0;
     final static byte PORCENTAJE_COMISION = 20;
 
-    Tarifa(){
-
-    }
-
-
     public static double getCosteDistancia(double distancia) {
         return distancia * COSTE_MILLA;
     }
