@@ -81,10 +81,26 @@ public class Carrera {
         return Tarifa.getCosteTotalEsperado(this);
     }
 
+    public Conductor getConductor() {
+        return conductor;
+    }
+
     public void setConductor(Conductor conductor) {
         this.conductor = conductor;
     }
 
+    public void asignarConductor(PoolConductores conductores) {
+        setConductor(conductores.asignarConductor());
+    }
 
+    public void realizarPago(double costeEsperado) {
+        setCosteTotal(costeEsperado);
+        setPropina(getPropina() + 1);
+
+    }
+
+    public void recibirPropina(int propina) {
+        setPropina(getPropina() + propina);
+    }
 
 }
