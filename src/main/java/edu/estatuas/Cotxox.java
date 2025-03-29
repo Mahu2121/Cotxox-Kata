@@ -1,5 +1,9 @@
 package edu.estatuas;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cotxox {
 
     public static void main(String[] args) {
@@ -44,7 +48,7 @@ public class Cotxox {
          * para ofrecer el servicio.
          * La flota es un objeto de tipo PoolConductores.
          */
-/*
+
         List<Conductor> poolConductores = new ArrayList<Conductor>();
         Conductor conductor = null;
 
@@ -73,7 +77,7 @@ public class Cotxox {
         PoolConductores conductores = new PoolConductores(poolConductores);
 
         /* Seleccion del conductor en la flota y asignacion a la carrera */
-/*
+
         carrera.asignarConductor(conductores);
 
         // Info por pantalla
@@ -84,6 +88,7 @@ public class Cotxox {
         System.out.println("Stars: " + carrera.getConductor().getValoracion());
         System.out.println("From: " + carrera.getOrigen());
         System.out.println("To: " + carrera.getDestino());
+
         boolean ocupado = carrera.getConductor().isOcupado();
         if (ocupado) {
             System.out.println("Disponible para ti");
@@ -97,7 +102,6 @@ public class Cotxox {
 
         carrera.realizarPago(carrera.getCosteEsperado());
         carrera.recibirPropina(1);
-        carrera.liberarConductor();
 
         System.out.println("Driver: " + carrera.getConductor().getNombre());
         System.out.println("TIP: " + carrera.getPropina());
@@ -112,7 +116,7 @@ public class Cotxox {
         System.out.println("Driver: " + carrera.getConductor().getNombre());
         System.out.println("Stars: " + carrera.getConductor().getValoracion());
 
- */
+
     }
 }
 
