@@ -8,11 +8,15 @@ public class PoolConductores {
     private List<Conductor> poolConductores;
 
     PoolConductores(List<Conductor> conductores) {
-        List<Conductor> poolConductores = new ArrayList<Conductor>();
+        this.poolConductores = conductores;
     }
 
     public List<Conductor> getPoolConductores() {
         return poolConductores;
+    }
+
+    public Conductor asignarConductor() {
+       return getPoolConductores().get(0);
     }
 
 }
